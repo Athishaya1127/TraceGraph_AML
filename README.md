@@ -68,6 +68,11 @@ TraceGraph analyzes both the individual transaction and the surrounding network 
 
 ## 3. System Architecture
 
+TraceGraph follows a layered architecture that combines temporal transaction modelling, graph-based feature engineering, machine learning, risk scoring, network investigation, and explainable visualization.
+
+<p align="center">
+  <img src="screenshots/tracegraph_architecture.png" alt="TraceGraph System Architecture" width="100%">
+</p>
 ```text
                     Transaction Sources
                            │
