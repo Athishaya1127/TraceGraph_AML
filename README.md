@@ -131,7 +131,7 @@ TraceGraph includes an interactive Streamlit dashboard for reviewing risk scores
 ### Risk Overview
 
 <p align="center">
-  <img src="screenshots/dashboard-overview.png"
+  <img src="screenshots/dashboard-overview.png.png"
        alt="TraceGraph Risk Overview Dashboard"
        width="100%">
 </p>
@@ -139,7 +139,7 @@ TraceGraph includes an interactive Streamlit dashboard for reviewing risk scores
 ### Network Investigation
 
 <p align="center">
-  <img src="screenshots/dashboard-investigation.png"
+  <img src="screenshots/dashboard-investigation.png.png"
        alt="TraceGraph Network Investigation Dashboard"
        width="100%">
 </p>
@@ -147,7 +147,7 @@ TraceGraph includes an interactive Streamlit dashboard for reviewing risk scores
 ### Pattern and Cycle Analysis
 
 <p align="center">
-  <img src="screenshots/dashboard-pattern-analysis.png"
+  <img src="screenshots/dashboard-pattern-analysis.png.png"
        alt="TraceGraph Pattern and Cycle Analysis Dashboard"
        width="100%">
 </p>
