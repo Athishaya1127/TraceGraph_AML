@@ -124,6 +124,33 @@ TraceGraph follows a layered architecture that combines temporal transaction mod
 ```
 
 ---
+## Streamlit Dashboard
+
+TraceGraph includes an interactive Streamlit dashboard for reviewing risk scores, suspicious transactions, transaction networks, tracing results, detected patterns, and temporal cycle activity.
+
+### Risk Overview
+
+<p align="center">
+  <img src="screenshots/dashboard-overview.png"
+       alt="TraceGraph Risk Overview Dashboard"
+       width="100%">
+</p>
+
+### Network Investigation
+
+<p align="center">
+  <img src="screenshots/dashboard-investigation.png"
+       alt="TraceGraph Network Investigation Dashboard"
+       width="100%">
+</p>
+
+### Pattern and Cycle Analysis
+
+<p align="center">
+  <img src="screenshots/dashboard-pattern-analysis.png"
+       alt="TraceGraph Pattern and Cycle Analysis Dashboard"
+       width="100%">
+</p>
 
 ## 4. Graph Representation
 
