@@ -1,0 +1,10 @@
+metric,value
+dataset_transactions,17144.0
+dataset_accounts,100.0
+dataset_alerts,18.0
+known_fraud_transactions,18.0
+fraud_rate_percent,0.104993
+high_risk_transactions,18.0
+known_fraud_high_risk_coverage_percent,100.0
+suspicious_temporal_cycles,2.0
+investigation_records,18.0

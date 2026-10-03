@@ -1,0 +1,6 @@
+model,precision,recall,f1,roc_auc,pr_auc,true_negatives,false_positives,false_negatives,true_positives,threshold
+Logistic Regression,1.0,0.75,0.8571428571428571,0.9901331153666512,0.7557803468208093,4282,0,1,3,
+Random Forest,1.0,0.25,0.4,0.8700957496496965,0.7502333177788147,4282,0,3,1,
+XGBoost,1.0,1.0,1.0,1.0,1.0,4282,0,0,4,
+TraceGraph Hybrid — Logistic Regression,1.0,0.75,0.8571428571428571,0.999007473143391,0.7976190476190477,4282,0,1,3,0.5
+TraceGraph Hybrid — XGBoost,1.0,1.0,1.0,1.0,1.0,4282,0,0,4,0.5

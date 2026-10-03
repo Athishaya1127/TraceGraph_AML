@@ -1,0 +1,6 @@
+PATTERN,TRANSACTION_COUNT
+suspicious reverse funding,11
+suspicious temporal cycle,10
+risk-aware fan-in,8
+suspicious forward flow,5
+risk-aware rapid-hop,4

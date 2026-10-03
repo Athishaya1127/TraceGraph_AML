@@ -1,0 +1,1114 @@
+[
+  {
+    "TX_ID": 2289,
+    "SENDER_ACCOUNT_ID": 55,
+    "RECEIVER_ACCOUNT_ID": 66,
+    "TX_AMOUNT": 13.73,
+    "TIMESTAMP": 27,
+    "RISK_SCORE": 0.99986136,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious forward flow",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      55
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      66
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [
+      2
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 2289,
+        "sender": 55,
+        "receiver": 66,
+        "amount": 13.73,
+        "timestamp": 27,
+        "risk_score": 0.99986136
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 2289,
+        "sender": 55,
+        "receiver": 66,
+        "amount": 13.73,
+        "timestamp": 27,
+        "risk_score": 0.99986136
+      },
+      {
+        "TX_ID": 3625,
+        "sender": 66,
+        "receiver": 67,
+        "amount": 13.73,
+        "timestamp": 41,
+        "risk_score": 0.9992754
+      },
+      {
+        "TX_ID": 3953,
+        "sender": 67,
+        "receiver": 90,
+        "amount": 13.73,
+        "timestamp": 44,
+        "risk_score": 0.99308264
+      },
+      {
+        "TX_ID": 4193,
+        "sender": 90,
+        "receiver": 53,
+        "amount": 13.73,
+        "timestamp": 47,
+        "risk_score": 0.99988806
+      }
+    ]
+  },
+  {
+    "TX_ID": 2785,
+    "SENDER_ACCOUNT_ID": 53,
+    "RECEIVER_ACCOUNT_ID": 55,
+    "TX_AMOUNT": 13.73,
+    "TIMESTAMP": 32,
+    "RISK_SCORE": 0.9999348,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 1,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      53
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      55
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [
+      2
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 2785,
+        "sender": 53,
+        "receiver": 55,
+        "amount": 13.73,
+        "timestamp": 32,
+        "risk_score": 0.9999348
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 2785,
+        "sender": 53,
+        "receiver": 55,
+        "amount": 13.73,
+        "timestamp": 32,
+        "risk_score": 0.9999348
+      }
+    ]
+  },
+  {
+    "TX_ID": 3625,
+    "SENDER_ACCOUNT_ID": 66,
+    "RECEIVER_ACCOUNT_ID": 67,
+    "TX_AMOUNT": 13.73,
+    "TIMESTAMP": 41,
+    "RISK_SCORE": 0.9992754,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious reverse funding",
+      "suspicious forward flow",
+      "risk-aware rapid-hop",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 4,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      66
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      67
+    ],
+    "RAPID_HOP_COUNT": 1,
+    "RAPID_HOPS": [
+      {
+        "TX_ID": 3953,
+        "sender": 67,
+        "receiver": 90,
+        "timestamp": 44,
+        "amount": 13.73
+      }
+    ],
+    "CYCLE_IDS": [
+      2
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 3625,
+        "sender": 66,
+        "receiver": 67,
+        "amount": 13.73,
+        "timestamp": 41,
+        "risk_score": 0.9992754
+      },
+      {
+        "TX_ID": 2289,
+        "sender": 55,
+        "receiver": 66,
+        "amount": 13.73,
+        "timestamp": 27,
+        "risk_score": 0.99986136
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 3625,
+        "sender": 66,
+        "receiver": 67,
+        "amount": 13.73,
+        "timestamp": 41,
+        "risk_score": 0.9992754
+      },
+      {
+        "TX_ID": 3953,
+        "sender": 67,
+        "receiver": 90,
+        "amount": 13.73,
+        "timestamp": 44,
+        "risk_score": 0.99308264
+      },
+      {
+        "TX_ID": 4193,
+        "sender": 90,
+        "receiver": 53,
+        "amount": 13.73,
+        "timestamp": 47,
+        "risk_score": 0.99988806
+      }
+    ]
+  },
+  {
+    "TX_ID": 3953,
+    "SENDER_ACCOUNT_ID": 67,
+    "RECEIVER_ACCOUNT_ID": 90,
+    "TX_AMOUNT": 13.73,
+    "TIMESTAMP": 44,
+    "RISK_SCORE": 0.99308264,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious reverse funding",
+      "suspicious forward flow",
+      "risk-aware rapid-hop",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 4,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      67
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      90
+    ],
+    "RAPID_HOP_COUNT": 1,
+    "RAPID_HOPS": [
+      {
+        "TX_ID": 4193,
+        "sender": 90,
+        "receiver": 53,
+        "timestamp": 47,
+        "amount": 13.73
+      }
+    ],
+    "CYCLE_IDS": [
+      2
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 3953,
+        "sender": 67,
+        "receiver": 90,
+        "amount": 13.73,
+        "timestamp": 44,
+        "risk_score": 0.99308264
+      },
+      {
+        "TX_ID": 3625,
+        "sender": 66,
+        "receiver": 67,
+        "amount": 13.73,
+        "timestamp": 41,
+        "risk_score": 0.9992754
+      },
+      {
+        "TX_ID": 2289,
+        "sender": 55,
+        "receiver": 66,
+        "amount": 13.73,
+        "timestamp": 27,
+        "risk_score": 0.99986136
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 3953,
+        "sender": 67,
+        "receiver": 90,
+        "amount": 13.73,
+        "timestamp": 44,
+        "risk_score": 0.99308264
+      },
+      {
+        "TX_ID": 4193,
+        "sender": 90,
+        "receiver": 53,
+        "amount": 13.73,
+        "timestamp": 47,
+        "risk_score": 0.99988806
+      }
+    ]
+  },
+  {
+    "TX_ID": 4193,
+    "SENDER_ACCOUNT_ID": 90,
+    "RECEIVER_ACCOUNT_ID": 53,
+    "TX_AMOUNT": 13.73,
+    "TIMESTAMP": 47,
+    "RISK_SCORE": 0.99988806,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious reverse funding",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      90
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      53
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [
+      2
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 4193,
+        "sender": 90,
+        "receiver": 53,
+        "amount": 13.73,
+        "timestamp": 47,
+        "risk_score": 0.99988806
+      },
+      {
+        "TX_ID": 3953,
+        "sender": 67,
+        "receiver": 90,
+        "amount": 13.73,
+        "timestamp": 44,
+        "risk_score": 0.99308264
+      },
+      {
+        "TX_ID": 3625,
+        "sender": 66,
+        "receiver": 67,
+        "amount": 13.73,
+        "timestamp": 41,
+        "risk_score": 0.9992754
+      },
+      {
+        "TX_ID": 2289,
+        "sender": 55,
+        "receiver": 66,
+        "amount": 13.73,
+        "timestamp": 27,
+        "risk_score": 0.99986136
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 4193,
+        "sender": 90,
+        "receiver": 53,
+        "amount": 13.73,
+        "timestamp": 47,
+        "risk_score": 0.99988806
+      }
+    ]
+  },
+  {
+    "TX_ID": 5527,
+    "SENDER_ACCOUNT_ID": 24,
+    "RECEIVER_ACCOUNT_ID": 12,
+    "TX_AMOUNT": 2.84,
+    "TIMESTAMP": 63,
+    "RISK_SCORE": 0.9999454,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in"
+    ],
+    "PATTERN_COUNT": 1,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      9,
+      24,
+      42,
+      95
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      12
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 5527,
+        "sender": 24,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 63,
+        "risk_score": 0.9999454
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 5527,
+        "sender": 24,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 63,
+        "risk_score": 0.9999454
+      }
+    ]
+  },
+  {
+    "TX_ID": 6089,
+    "SENDER_ACCOUNT_ID": 9,
+    "RECEIVER_ACCOUNT_ID": 12,
+    "TX_AMOUNT": 2.84,
+    "TIMESTAMP": 70,
+    "RISK_SCORE": 0.9999478,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in",
+      "suspicious reverse funding"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      9,
+      24,
+      42,
+      95
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      12
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 6089,
+        "sender": 9,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 70,
+        "risk_score": 0.9999478
+      },
+      {
+        "TX_ID": 5527,
+        "sender": 24,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 63,
+        "risk_score": 0.9999454
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 6089,
+        "sender": 9,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 70,
+        "risk_score": 0.9999478
+      }
+    ]
+  },
+  {
+    "TX_ID": 6740,
+    "SENDER_ACCOUNT_ID": 42,
+    "RECEIVER_ACCOUNT_ID": 12,
+    "TX_AMOUNT": 2.84,
+    "TIMESTAMP": 77,
+    "RISK_SCORE": 0.9999491,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in",
+      "suspicious reverse funding"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      9,
+      24,
+      42,
+      95
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      12
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 6740,
+        "sender": 42,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 77,
+        "risk_score": 0.9999491
+      },
+      {
+        "TX_ID": 6089,
+        "sender": 9,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 70,
+        "risk_score": 0.9999478
+      },
+      {
+        "TX_ID": 5527,
+        "sender": 24,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 63,
+        "risk_score": 0.9999454
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 6740,
+        "sender": 42,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 77,
+        "risk_score": 0.9999491
+      }
+    ]
+  },
+  {
+    "TX_ID": 7458,
+    "SENDER_ACCOUNT_ID": 95,
+    "RECEIVER_ACCOUNT_ID": 12,
+    "TX_AMOUNT": 2.84,
+    "TIMESTAMP": 84,
+    "RISK_SCORE": 0.9999126,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in",
+      "suspicious reverse funding"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      9,
+      24,
+      42,
+      95
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      12
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 7458,
+        "sender": 95,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 84,
+        "risk_score": 0.9999126
+      },
+      {
+        "TX_ID": 6740,
+        "sender": 42,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 77,
+        "risk_score": 0.9999491
+      },
+      {
+        "TX_ID": 6089,
+        "sender": 9,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 70,
+        "risk_score": 0.9999478
+      },
+      {
+        "TX_ID": 5527,
+        "sender": 24,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 63,
+        "risk_score": 0.9999454
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 7458,
+        "sender": 95,
+        "receiver": 12,
+        "amount": 2.84,
+        "timestamp": 84,
+        "risk_score": 0.9999126
+      }
+    ]
+  },
+  {
+    "TX_ID": 9115,
+    "SENDER_ACCOUNT_ID": 24,
+    "RECEIVER_ACCOUNT_ID": 47,
+    "TX_AMOUNT": 3.33,
+    "TIMESTAMP": 103,
+    "RISK_SCORE": 0.9999527,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in"
+    ],
+    "PATTERN_COUNT": 1,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      17,
+      24,
+      57,
+      74
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      47
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 9115,
+        "sender": 24,
+        "receiver": 47,
+        "amount": 3.33,
+        "timestamp": 103,
+        "risk_score": 0.9999527
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 9115,
+        "sender": 24,
+        "receiver": 47,
+        "amount": 3.33,
+        "timestamp": 103,
+        "risk_score": 0.9999527
+      }
+    ]
+  },
+  {
+    "TX_ID": 9726,
+    "SENDER_ACCOUNT_ID": 17,
+    "RECEIVER_ACCOUNT_ID": 47,
+    "TX_AMOUNT": 3.24,
+    "TIMESTAMP": 110,
+    "RISK_SCORE": 0.99994993,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in",
+      "suspicious reverse funding"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      17,
+      24,
+      57,
+      74
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      47
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 9726,
+        "sender": 17,
+        "receiver": 47,
+        "amount": 3.24,
+        "timestamp": 110,
+        "risk_score": 0.99994993
+      },
+      {
+        "TX_ID": 9115,
+        "sender": 24,
+        "receiver": 47,
+        "amount": 3.33,
+        "timestamp": 103,
+        "risk_score": 0.9999527
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 9726,
+        "sender": 17,
+        "receiver": 47,
+        "amount": 3.24,
+        "timestamp": 110,
+        "risk_score": 0.99994993
+      }
+    ]
+  },
+  {
+    "TX_ID": 10379,
+    "SENDER_ACCOUNT_ID": 74,
+    "RECEIVER_ACCOUNT_ID": 47,
+    "TX_AMOUNT": 3.15,
+    "TIMESTAMP": 117,
+    "RISK_SCORE": 0.9999002,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in",
+      "suspicious reverse funding"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      17,
+      24,
+      57,
+      74
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      47
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 10379,
+        "sender": 74,
+        "receiver": 47,
+        "amount": 3.15,
+        "timestamp": 117,
+        "risk_score": 0.9999002
+      },
+      {
+        "TX_ID": 9726,
+        "sender": 17,
+        "receiver": 47,
+        "amount": 3.24,
+        "timestamp": 110,
+        "risk_score": 0.99994993
+      },
+      {
+        "TX_ID": 9115,
+        "sender": 24,
+        "receiver": 47,
+        "amount": 3.33,
+        "timestamp": 103,
+        "risk_score": 0.9999527
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 10379,
+        "sender": 74,
+        "receiver": 47,
+        "amount": 3.15,
+        "timestamp": 117,
+        "risk_score": 0.9999002
+      }
+    ]
+  },
+  {
+    "TX_ID": 10893,
+    "SENDER_ACCOUNT_ID": 57,
+    "RECEIVER_ACCOUNT_ID": 47,
+    "TX_AMOUNT": 2.88,
+    "TIMESTAMP": 124,
+    "RISK_SCORE": 0.99995744,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "risk-aware fan-in",
+      "suspicious reverse funding"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 4,
+    "FAN_IN_ACCOUNTS": [
+      17,
+      24,
+      57,
+      74
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      47
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 10893,
+        "sender": 57,
+        "receiver": 47,
+        "amount": 2.88,
+        "timestamp": 124,
+        "risk_score": 0.99995744
+      },
+      {
+        "TX_ID": 10379,
+        "sender": 74,
+        "receiver": 47,
+        "amount": 3.15,
+        "timestamp": 117,
+        "risk_score": 0.9999002
+      },
+      {
+        "TX_ID": 9726,
+        "sender": 17,
+        "receiver": 47,
+        "amount": 3.24,
+        "timestamp": 110,
+        "risk_score": 0.99994993
+      },
+      {
+        "TX_ID": 9115,
+        "sender": 24,
+        "receiver": 47,
+        "amount": 3.33,
+        "timestamp": 103,
+        "risk_score": 0.9999527
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 10893,
+        "sender": 57,
+        "receiver": 47,
+        "amount": 2.88,
+        "timestamp": 124,
+        "risk_score": 0.99995744
+      }
+    ]
+  },
+  {
+    "TX_ID": 15491,
+    "SENDER_ACCOUNT_ID": 81,
+    "RECEIVER_ACCOUNT_ID": 82,
+    "TX_AMOUNT": 19.6,
+    "TIMESTAMP": 182,
+    "RISK_SCORE": 0.99905306,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious forward flow",
+      "risk-aware rapid-hop",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 3,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      81
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      82
+    ],
+    "RAPID_HOP_COUNT": 1,
+    "RAPID_HOPS": [
+      {
+        "TX_ID": 16195,
+        "sender": 82,
+        "receiver": 43,
+        "timestamp": 190,
+        "amount": 19.6
+      }
+    ],
+    "CYCLE_IDS": [
+      1
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 15491,
+        "sender": 81,
+        "receiver": 82,
+        "amount": 19.6,
+        "timestamp": 182,
+        "risk_score": 0.99905306
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 15491,
+        "sender": 81,
+        "receiver": 82,
+        "amount": 19.6,
+        "timestamp": 182,
+        "risk_score": 0.99905306
+      },
+      {
+        "TX_ID": 16195,
+        "sender": 82,
+        "receiver": 43,
+        "amount": 19.6,
+        "timestamp": 190,
+        "risk_score": 0.99947816
+      }
+    ]
+  },
+  {
+    "TX_ID": 15994,
+    "SENDER_ACCOUNT_ID": 43,
+    "RECEIVER_ACCOUNT_ID": 20,
+    "TX_AMOUNT": 19.6,
+    "TIMESTAMP": 188,
+    "RISK_SCORE": 0.999705,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious forward flow",
+      "risk-aware rapid-hop",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 3,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      43
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      20
+    ],
+    "RAPID_HOP_COUNT": 1,
+    "RAPID_HOPS": [
+      {
+        "TX_ID": 16737,
+        "sender": 20,
+        "receiver": 39,
+        "timestamp": 195,
+        "amount": 19.6
+      }
+    ],
+    "CYCLE_IDS": [
+      1
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 15994,
+        "sender": 43,
+        "receiver": 20,
+        "amount": 19.6,
+        "timestamp": 188,
+        "risk_score": 0.999705
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 15994,
+        "sender": 43,
+        "receiver": 20,
+        "amount": 19.6,
+        "timestamp": 188,
+        "risk_score": 0.999705
+      },
+      {
+        "TX_ID": 16737,
+        "sender": 20,
+        "receiver": 39,
+        "amount": 19.6,
+        "timestamp": 195,
+        "risk_score": 0.9997892
+      }
+    ]
+  },
+  {
+    "TX_ID": 16195,
+    "SENDER_ACCOUNT_ID": 82,
+    "RECEIVER_ACCOUNT_ID": 43,
+    "TX_AMOUNT": 19.6,
+    "TIMESTAMP": 190,
+    "RISK_SCORE": 0.99947816,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious reverse funding",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      82
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      43
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [
+      1
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 16195,
+        "sender": 82,
+        "receiver": 43,
+        "amount": 19.6,
+        "timestamp": 190,
+        "risk_score": 0.99947816
+      },
+      {
+        "TX_ID": 15491,
+        "sender": 81,
+        "receiver": 82,
+        "amount": 19.6,
+        "timestamp": 182,
+        "risk_score": 0.99905306
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 16195,
+        "sender": 82,
+        "receiver": 43,
+        "amount": 19.6,
+        "timestamp": 190,
+        "risk_score": 0.99947816
+      }
+    ]
+  },
+  {
+    "TX_ID": 16543,
+    "SENDER_ACCOUNT_ID": 39,
+    "RECEIVER_ACCOUNT_ID": 81,
+    "TX_AMOUNT": 19.6,
+    "TIMESTAMP": 193,
+    "RISK_SCORE": 0.99855894,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 1,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      39
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      81
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [
+      1
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 16543,
+        "sender": 39,
+        "receiver": 81,
+        "amount": 19.6,
+        "timestamp": 193,
+        "risk_score": 0.99855894
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 16543,
+        "sender": 39,
+        "receiver": 81,
+        "amount": 19.6,
+        "timestamp": 193,
+        "risk_score": 0.99855894
+      }
+    ]
+  },
+  {
+    "TX_ID": 16737,
+    "SENDER_ACCOUNT_ID": 20,
+    "RECEIVER_ACCOUNT_ID": 39,
+    "TX_AMOUNT": 19.6,
+    "TIMESTAMP": 195,
+    "RISK_SCORE": 0.9997892,
+    "INVESTIGATION_STATUS": "SUSPICIOUS_NETWORK_ACTIVITY",
+    "PATTERNS": [
+      "suspicious reverse funding",
+      "suspicious temporal cycle"
+    ],
+    "PATTERN_COUNT": 2,
+    "FAN_IN_ACCOUNT_COUNT": 1,
+    "FAN_IN_ACCOUNTS": [
+      20
+    ],
+    "FAN_OUT_ACCOUNT_COUNT": 1,
+    "FAN_OUT_ACCOUNTS": [
+      39
+    ],
+    "RAPID_HOP_COUNT": 0,
+    "RAPID_HOPS": [],
+    "CYCLE_IDS": [
+      1
+    ],
+    "REVERSE_TRACE": [
+      {
+        "TX_ID": 16737,
+        "sender": 20,
+        "receiver": 39,
+        "amount": 19.6,
+        "timestamp": 195,
+        "risk_score": 0.9997892
+      },
+      {
+        "TX_ID": 15994,
+        "sender": 43,
+        "receiver": 20,
+        "amount": 19.6,
+        "timestamp": 188,
+        "risk_score": 0.999705
+      }
+    ],
+    "FORWARD_TRACE": [
+      {
+        "TX_ID": 16737,
+        "sender": 20,
+        "receiver": 39,
+        "amount": 19.6,
+        "timestamp": 195,
+        "risk_score": 0.9997892
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+TX_ID,SENDER_ACCOUNT_ID,RECEIVER_ACCOUNT_ID,TX_AMOUNT,TIMESTAMP,RISK_SCORE,INVESTIGATION_STATUS,PATTERN_COUNT,PATTERNS,FAN_IN_ACCOUNT_COUNT,FAN_OUT_ACCOUNT_COUNT,RAPID_HOP_COUNT,CYCLE_IDS
+3625,66,67,13.73,41,0.9992754,SUSPICIOUS_NETWORK_ACTIVITY,4,suspicious reverse funding | suspicious forward flow | risk-aware rapid-hop | suspicious temporal cycle,1,1,1,2
+3953,67,90,13.73,44,0.99308264,SUSPICIOUS_NETWORK_ACTIVITY,4,suspicious reverse funding | suspicious forward flow | risk-aware rapid-hop | suspicious temporal cycle,1,1,1,2
+15994,43,20,19.6,188,0.999705,SUSPICIOUS_NETWORK_ACTIVITY,3,suspicious forward flow | risk-aware rapid-hop | suspicious temporal cycle,1,1,1,1
+15491,81,82,19.6,182,0.99905306,SUSPICIOUS_NETWORK_ACTIVITY,3,suspicious forward flow | risk-aware rapid-hop | suspicious temporal cycle,1,1,1,1
+10893,57,47,2.88,124,0.99995744,SUSPICIOUS_NETWORK_ACTIVITY,2,risk-aware fan-in | suspicious reverse funding,4,1,0,
+9726,17,47,3.24,110,0.99994993,SUSPICIOUS_NETWORK_ACTIVITY,2,risk-aware fan-in | suspicious reverse funding,4,1,0,
+6740,42,12,2.84,77,0.9999491,SUSPICIOUS_NETWORK_ACTIVITY,2,risk-aware fan-in | suspicious reverse funding,4,1,0,
+6089,9,12,2.84,70,0.9999478,SUSPICIOUS_NETWORK_ACTIVITY,2,risk-aware fan-in | suspicious reverse funding,4,1,0,
+7458,95,12,2.84,84,0.9999126,SUSPICIOUS_NETWORK_ACTIVITY,2,risk-aware fan-in | suspicious reverse funding,4,1,0,
+10379,74,47,3.15,117,0.9999002,SUSPICIOUS_NETWORK_ACTIVITY,2,risk-aware fan-in | suspicious reverse funding,4,1,0,
+4193,90,53,13.73,47,0.99988806,SUSPICIOUS_NETWORK_ACTIVITY,2,suspicious reverse funding | suspicious temporal cycle,1,1,0,2
+2289,55,66,13.73,27,0.99986136,SUSPICIOUS_NETWORK_ACTIVITY,2,suspicious forward flow | suspicious temporal cycle,1,1,0,2
+16737,20,39,19.6,195,0.9997892,SUSPICIOUS_NETWORK_ACTIVITY,2,suspicious reverse funding | suspicious temporal cycle,1,1,0,1
+16195,82,43,19.6,190,0.99947816,SUSPICIOUS_NETWORK_ACTIVITY,2,suspicious reverse funding | suspicious temporal cycle,1,1,0,1
+9115,24,47,3.33,103,0.9999527,SUSPICIOUS_NETWORK_ACTIVITY,1,risk-aware fan-in,4,1,0,
+5527,24,12,2.84,63,0.9999454,SUSPICIOUS_NETWORK_ACTIVITY,1,risk-aware fan-in,4,1,0,
+2785,53,55,13.73,32,0.9999348,SUSPICIOUS_NETWORK_ACTIVITY,1,suspicious temporal cycle,1,1,0,2
+16543,39,81,19.6,193,0.99855894,SUSPICIOUS_NETWORK_ACTIVITY,1,suspicious temporal cycle,1,1,0,1

@@ -1,0 +1,3 @@
+model,validation_f1,threshold
+TraceGraph CNN,0.4,0.08000000000000002
+TraceGraph ResNet-18,0.4,0.7600000000000002

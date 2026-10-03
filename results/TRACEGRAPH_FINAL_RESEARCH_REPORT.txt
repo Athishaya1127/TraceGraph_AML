@@ -1,0 +1,49 @@
+TRACEGRAPH — FINAL EVALUATION AND RESEARCH RESULTS
+================================================================================
+
+1. DATASET
+The evaluated transaction dataset contains 17,144 transactions across 100 accounts.
+The dataset contains 18 alerts and 18 transactions labelled as fraudulent.
+The observed fraud-labelled transaction rate is 0.1050%.
+Transaction timestamps span 0 to 199.
+
+2. GRAPH REPRESENTATION
+TraceGraph represents accounts as graph nodes and transactions as directed edges. Transaction amount, transaction count and transaction velocity are represented as separate channels in the multi-channel graph representation.
+
+3. TEMPORAL ANALYSIS
+The system evaluates transaction activity over multiple temporal windows and additionally uses overlapping sliding windows for chronological deep-learning experiments.
+
+4. MACHINE LEARNING
+Baseline Logistic Regression, Random Forest and XGBoost models were evaluated using transaction-level features.
+Hybrid models combine transaction-level and graph-derived account features.
+
+5. TEMPORAL DEEP LEARNING
+CNN and ResNet-based models were evaluated using the multi-channel temporal graph representation.
+The chronological sliding-window experiment was treated separately from the random-split experiment to reduce the risk of temporal contamination.
+
+6. RISK-BASED INVESTIGATION
+The final investigation pipeline identified 18 high-risk transaction records using the configured risk threshold.
+All 18 known injected fraud transactions were present among the high-risk records, corresponding to 100.00% coverage.
+
+7. AML PATTERN DETECTION
+The investigation layer generated 18 investigation records and detected 2 suspicious temporal cycles.
+Detected investigation patterns include combinations of suspicious reverse funding, suspicious forward flow, risk-aware fan-in, risk-aware rapid-hop behaviour and suspicious temporal cycles.
+
+8. TEMPORAL CYCLE ANALYSIS
+Two suspicious temporal cycles were recovered from the high-risk transaction subgraph. The detected cycles correspond to the injected cyclic transaction structures in the evaluated dataset.
+
+9. INTERPRETATION
+TraceGraph should be interpreted as an AML investigation-support system. A high-risk score represents a prioritization signal for further investigation rather than proof that a transaction is illicit.
+
+10. IMPORTANT EXPERIMENTAL LIMITATIONS
+The dataset contains only 18 fraud-labelled transactions and four alert patterns. Consequently, evaluation metrics based on a small number of positive examples have high variance.
+The hybrid graph features were initially computed using the complete dataset before the random train/test split. Therefore, the resulting hybrid-model metrics are exploratory and should not be presented as leakage-free generalization performance.
+The sliding temporal windows are overlapping and therefore not statistically independent.
+The evaluated AMLSim timestamps span 0–199 and should not be interpreted as real-world clock units without an explicit dataset-specific mapping.
+
+11. RESEARCH CONTRIBUTION
+The TraceGraph pipeline combines temporal transaction modelling, multi-channel graph representations, graph-derived account features, machine-learning risk scoring, bidirectional tracing and temporal cycle detection within a unified investigation workflow.
+The dashboard converts model outputs into investigation-oriented views including risk prioritization, network analysis, tracing, cycle analysis and case reporting.
+
+12. CONCLUSION
+The experiments demonstrate the feasibility of combining transaction-level learning with temporal graph intelligence for identifying and investigating structured transaction patterns in the evaluated AMLSim dataset.

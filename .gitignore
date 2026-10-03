@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.secret
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Raw datasets
+data/raw/
+*.7z
+*.zip
+*.rar
+
+# Temporary files
+*.log
+*.tmp
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Colab/runtime
+.config/
+sample_data/

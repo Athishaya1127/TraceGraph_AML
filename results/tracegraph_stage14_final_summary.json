@@ -1,0 +1,41 @@
+{
+  "dataset": {
+    "transactions": 17144,
+    "accounts": 100,
+    "alerts": 18,
+    "fraud_transactions": 18,
+    "normal_transactions": 17126,
+    "fraud_rate_percent": 0.10499300046663555,
+    "timestamp_min": 0,
+    "timestamp_max": 199,
+    "unique_timestamps": 200,
+    "transaction_amount_min": 2.84,
+    "transaction_amount_max": 92.22,
+    "transaction_amount_mean": 34.12317137190853,
+    "transaction_amount_median": 24.95
+  },
+  "final_metrics": {
+    "dataset_transactions": 17144,
+    "dataset_accounts": 100,
+    "dataset_alerts": 18,
+    "known_fraud_transactions": 18,
+    "fraud_rate_percent": 0.104993,
+    "high_risk_transactions": 18,
+    "known_fraud_high_risk_coverage_percent": 100.0,
+    "suspicious_temporal_cycles": 2,
+    "investigation_records": 18
+  },
+  "investigation_statistics": {
+    "investigation_records": 18,
+    "suspicious_cycles": 2,
+    "pattern_types": 5,
+    "pattern_instances": "38"
+  },
+  "files": {
+    "final_metrics": "/content/drive/MyDrive/TraceGraph/results/tracegraph_final_metrics.csv",
+    "research_report": "/content/drive/MyDrive/TraceGraph/results/TRACEGRAPH_FINAL_RESEARCH_REPORT.txt",
+    "pattern_summary": "/content/drive/MyDrive/TraceGraph/results/tracegraph_final_pattern_summary.csv",
+    "suspicious_cycles": "/content/drive/MyDrive/TraceGraph/results/tracegraph_final_suspicious_cycles.csv",
+    "investigation_summary": "/content/drive/MyDrive/TraceGraph/results/tracegraph_final_investigation_summary.csv"
+  }
+}
