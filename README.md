@@ -339,27 +339,43 @@ See [`data/README.md`](data/README.md) for dataset information.
 
 ## 10. Model Evaluation
 
-The baseline transaction-level experiments produced the following results on the evaluated test split.
+TraceGraph was evaluated using transaction-level baseline models, hybrid graph-enhanced models, and temporal deep learning models.
 
-| Model | Precision | Recall | F1 | ROC-AUC | PR-AUC |
+### Transaction-Level and Hybrid Models
+
+| Model | Precision | Recall | F1 Score | ROC-AUC | PR-AUC |
 |---|---:|---:|---:|---:|---:|
-| Logistic Regression | 1.00 | 0.75 | 0.8571 | 0.9901 | 0.7558 |
-| Random Forest | 1.00 | 0.25 | 0.4000 | 0.8701 | 0.7502 |
-| XGBoost | 1.00 | 1.00 | 1.0000 | 1.0000 | 1.0000 |
-| Hybrid Logistic Regression | 1.00 | 0.75 | 0.8571 | 0.9990 | 0.7976 |
-| Hybrid XGBoost | 1.00 | 1.00 | 1.0000 | 1.0000 | 1.0000 |
+| Logistic Regression | 1.0000 | 0.7500 | 0.8571 | 0.9901 | 0.7558 |
+| Random Forest | 1.0000 | 0.2500 | 0.4000 | 0.8701 | 0.7502 |
+| XGBoost | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| Hybrid Logistic Regression | 1.0000 | 0.7500 | 0.8571 | 0.9990 | 0.7976 |
+| Hybrid XGBoost | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
 
-### Important Evaluation Context
+### Temporal Deep Learning Models
 
-The test split contained only **4 positive fraud-labelled transactions**.
+| Model | Threshold | Precision | Recall | F1 Score | ROC-AUC | PR-AUC |
+|---|---:|---:|---:|---:|---:|---:|
+| CNN | 0.08 | 0.4000 | 0.1111 | 0.1739 | 0.4487 | 0.5467 |
+| ResNet-18 | 0.76 | 0.0000 | 0.0000 | 0.0000 | 0.3120 | 0.4796 |
 
-Therefore, these metrics should not be interpreted as evidence of production-level AML detection performance.
+### Evaluation Notes
 
-In addition, the hybrid feature experiment was computed using graph/account information derived from the complete dataset before the train/test split. This introduces potential temporal/data leakage.
+The dataset contains only 18 fraud-labelled transactions, and the stratified transaction-level test split contains only 4 positive samples. Therefore, the reported test metrics should be interpreted in the context of this highly imbalanced and small evaluation set.
 
-Consequently, the hybrid model results are retained as exploratory research results rather than being presented as a production-valid benchmark.
+The hybrid graph-enhanced experiment also has an important methodological limitation: graph and account-level features were computed using the complete dataset before the train/test split. This introduces potential temporal and information leakage. Consequently, the hybrid model results are treated as exploratory research results rather than production-valid benchmark measurements.
 
----
+The temporal CNN and ResNet-18 experiments used chronological sliding-window evaluation to better reflect temporal modelling. Their results demonstrate the difficulty of learning robust temporal representations from the small number of fraud patterns available in this dataset.
+## Key Experimental Findings
+
+The experiments demonstrate several important observations from the TraceGraph pipeline.
+
+First, transaction-level machine learning models can separate the injected fraud patterns effectively in this controlled AMLSim dataset. Logistic Regression achieved an F1 score of 0.8571, while XGBoost achieved perfect test-set metrics on the four positive test samples.
+
+Second, incorporating account-level and graph-derived features substantially increased the model's ability to represent transaction-network behaviour. However, because these features were generated before the train/test split, the hybrid results should be considered exploratory rather than a leakage-free benchmark.
+
+Third, the temporal CNN and ResNet-18 experiments performed substantially worse than the transaction-level and hybrid models. This highlights the difficulty of learning temporal graph representations when the available dataset contains only 18 fraud-labelled transactions and a limited number of injected fraud patterns.
+
+Finally, the investigation layer successfully identified all 18 fraud-labelled transactions as high-risk in the evaluated dataset and recovered two suspicious temporal cycles corresponding to the injected cycle patterns.
 
 ## 11. Temporal Deep Learning Experiments
 
@@ -375,8 +391,10 @@ The test results were:
 These results demonstrate that the temporal graph image representation and deep-learning models require further development and validation.
 
 The experiments are included as part of the research pipeline rather than being presented as the final production model.
+> **Important:** Identifying all 18 fraud-labelled transactions as high-risk in this evaluated dataset should not be interpreted as 100% fraud-detection accuracy. The result reflects coverage of the known labelled cases in this specific experimental dataset.
 
 ---
+
 
 ## 12. Risk Scoring
 
